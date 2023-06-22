@@ -1,11 +1,10 @@
 // I know it should be PeopleList but to follow along I'll name it as it is in the tutorial
 // Okay there're a lot of mispelling and grammar errors I'll just ignore it
 
+
+import { Name } from "./Person.types";
 type PersonListProps = {
-  names: {
-    first: string;
-    last: string;
-  }[];
+  names: Name[]
 };
 
 export default function PersonList({names}: PersonListProps) {
