@@ -1,12 +1,12 @@
 type GreetProps = {
   name: string;
-  messageCount: number;
+  messageCount?: number;
   isLoggedIn: boolean;
 };
 
 export default function Greeting({
   name,
-  messageCount,
+  messageCount = 0,
   isLoggedIn,
 }: GreetProps) {
   return (
